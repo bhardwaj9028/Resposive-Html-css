@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            overflow: hidden;
+        }
+
+        .column {
+            width: 100%;
+            float: left;
+        }
+
+
+        .col-1 {
+            background-color: chartreuse;
+        }
+
+        .col-2 {
+            background-color: rgb(255, 136, 0);
+        }
+
+        @media (min-width: 768px) {
+            .column {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column col-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, facilis quae culpa omnis
+            temporibus quo sed dignissimos soluta provident alias perspiciatis laborum molestiae dolorem et neque ipsa
+            minima vel consequuntur.</div>
+
+        <div class="column col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, facilis quae culpa omnis
+            temporibus quo sed dignissimos soluta provident alias perspiciatis laborum molestiae dolorem et neque ipsa
+            minima vel consequuntur.</div>
+
+    </div>
+
+</body>
+
+</html>

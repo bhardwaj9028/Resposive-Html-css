@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* Equal-width columns */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .grid-item {
+            background-color: #e0e0e0;
+            /* Example background color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Media queries */
+        @media (max-width: 1200px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                /* Change to 4 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 992px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                /* Change to 3 columns on even smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                /* Change to 2 columns on even smaller screens */
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 775px) {
+            .grid-item:last-child {
+                grid-column: 1 / span 2;
+                /* Make the last item span across all three columns */
+            }
+        }
+
+
+
+        @media (max-width: 300px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                /* Change to 1 column on the smallest screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, non tempora esse
+            placeat ex dignissimos, eligendi dolorem saepe minima, voluptatum consectetur quae. Praesentium unde,
+            ducimus doloribus obcaecati fuga accusantium veritatis.</div>
+        <div class="grid-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint voluptas
+            incidunt quo debitis eum architecto modi quam assumenda maiores nam, reiciendis aliquid unde nulla, aliquam,
+            asperiores beatae blanditiis dolor.</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla, culpa, totam odio
+            vel temporibus sequi ipsam quisquam consectetur repellendus assumenda hic, eius commodi sed deserunt amet
+            corrupti rem quos.</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit earum tempore laboriosam
+            ea explicabo aut facere beatae odit voluptatem nihil nisi, nostrum exercitationem harum amet id similique
+            perspiciatis ex maiores.</div>
+        <div class="grid-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eaque quod unde rerum qui
+            modi laudantium vero natus mollitia id sint facere dolore excepturi earum pariatur, necessitatibus nam
+            molestiae incidunt.</div>
+    </div>
+
+</body>
+
+</html>

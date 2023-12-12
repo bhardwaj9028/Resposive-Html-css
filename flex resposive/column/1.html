@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-item {
+            flex-basis: 100%;
+            /* Each column occupies 100% of the container width */
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: chartreuse;
+        }
+
+        @media screen and (min-width: 768px) {
+            .flex-item {
+                flex-basis: 50%;
+                /* On screens wider than 768px, each column occupies 50% of the container width */
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .flex-item {
+                flex-basis: 33.33%;
+                /* On screens wider than 1024px, each column occupies 33.33% of the container width */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Column 1</div>
+    </div>
+
+</body>
+
+</html>

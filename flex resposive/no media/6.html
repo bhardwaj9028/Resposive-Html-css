@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* Sets the gap between the boxes */
+        }
+
+        .flex-item {
+            flex-basis: calc(50% - 10px);
+            /* Initially, each column occupies 50% of the container width minus the gap */
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: coral;
+        }
+
+        .flex-item:nth-child(3n+1),
+        .flex-item:nth-child(3n+2) {
+            flex-basis: calc(33.33% - 10px);
+            /* For the first and second columns in each row, set flex-basis to 33.33% minus the gap */
+        }
+
+        .flex-item:nth-child(3n) {
+            flex-basis: calc(34% - 10px);
+            /* For the third column in each row, set flex-basis to 16.66% minus the gap */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Column 1</div>
+        <div class="flex-item">Column 2</div>
+        <div class="flex-item">Column 3</div>
+        <div class="flex-item">Column 4</div>
+        <div class="flex-item">Column 5</div>
+        <div class="flex-item">Column 6</div>
+    </div>
+
+
+</body>
+
+</html>

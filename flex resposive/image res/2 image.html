@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex-basis: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 480px) {
+            .flex-item {
+                flex-basis: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <img src="r.jpg" alt="Image 1" class="flex-item" width="50%">
+        <img src="r.jpg" alt="Image 2" class="flex-item" width="50%">
+    </div>
+
+</body>
+
+</html>

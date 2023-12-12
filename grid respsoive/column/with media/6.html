@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* Equal-width columns */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .grid-item {
+            background-color: #1a1917;
+            /* Example background color */
+            padding: 20px;
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        /* Media queries */
+        @media (max-width: 1200px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                /* Change to 4 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                /* Change to 2 columns on even smaller screens */
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                /* Change to 2 columns on even smaller screens */
+            }
+        }
+
+
+        @media (max-width: 450px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+                /* Change to 2 columns on even smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eum nihil commodi
+            perspiciatis laudantium similique, repudiandae id ipsa debitis sapiente necessitatibus exercitationem
+            inventore, quam illum fugiat excepturi repellat sed libero?</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid libero culpa nulla
+            adipisci fugiat temporibus quas placeat esse nihil deserunt quaerat tenetur minus, porro qui et id iste
+            dolore?</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet nihil debitis excepturi
+            dolorum, obcaecati sapiente quisquam eius totam atque eos quo beatae possimus repellendus recusandae
+            exercitationem eum nostrum iusto accusamus?</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, expedita excepturi
+            placeat autem cupiditate neque assumenda ad vero quos repudiandae eius distinctio consectetur. Aliquam iste
+            perspiciatis in fuga ipsum est?</div>
+        <div class="grid-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas vero modi tenetur
+            dolores et facilis sint, ipsum dolorem ratione soluta illo inventore delectus, culpa corporis accusamus
+            eveniet perspiciatis architecto labore!</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos perferendis repellat
+            porro dolorem expedita tempora perspiciatis aliquid adipisci in officia voluptates numquam fugit,
+            reprehenderit dolore alias distinctio earum accusamus?</div>
+    </div>
+
+</body>
+
+</html>

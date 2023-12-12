@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            overflow: hidden;
+        }
+
+        .column {
+            width: 100%;
+            float: left;
+        }
+
+
+
+        .col-1 {
+            background-color: chocolate;
+        }
+
+
+        .col-2 {
+            background-color: rgb(102, 210, 30);
+        }
+
+
+        .col-3 {
+            background-color: rgb(99, 30, 210);
+        }
+
+
+        .col-4 {
+            background-color: rgb(210, 30, 120);
+        }
+
+
+
+
+
+
+
+
+        @media (min-width: 768px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .column {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column col-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat porro dolore
+            reprehenderit. Deleniti, labore quae velit consequatur officia minima repudiandae atque assumenda. Placeat
+            voluptas consectetur voluptatem architecto quibusdam praesentium nemo?</div>
+
+        <div class="column col-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat porro dolore
+            reprehenderit. Deleniti, labore quae velit consequatur officia minima repudiandae atque assumenda. Placeat
+            voluptas consectetur voluptatem architecto quibusdam praesentium nemo?</div>
+        <div class="column col-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat porro dolore
+            reprehenderit. Deleniti, labore quae velit consequatur officia minima repudiandae atque assumenda. Placeat
+            voluptas consectetur voluptatem architecto quibusdam praesentium nemo?</div>
+        <div class="column col-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat porro dolore
+            reprehenderit. Deleniti, labore quae velit consequatur officia minima repudiandae atque assumenda. Placeat
+            voluptas consectetur voluptatem architecto quibusdam praesentium nemo?</div>
+
+
+    </div>
+
+</body>
+
+</html>

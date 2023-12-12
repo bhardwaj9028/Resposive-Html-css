@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .flex-item {
+            flex-basis: 50%;
+            /* Initially, each column occupies 50% of the container */
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+
+
+
+        @media screen and (min-width: 180px) {
+            .flex-item {
+                flex-basis: 100%;
+                /* On screens wider than 768px, each column occupies 33.33% */
+            }
+        }
+
+
+
+        @media screen and (min-width: 550px) {
+            .flex-item {
+                flex-basis: 49.5%;
+                /* On screens wider than 768px, each column occupies 33.33% */
+            }
+        }
+
+
+
+        @media screen and (min-width: 1100px) {
+            .flex-item {
+                flex-basis: 24.6%;
+                /* On screens wider than 1200px, each column occupies 20% */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore quibusdam voluptas
+            explicabo, fugiat voluptatem inventore impedit quae voluptatum. Facere nemo eum incidunt dolor ex amet quod,
+            illum eos suscipit?</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente illum
+            voluptatibus, minus sequi doloribus vero iste dolorum perferendis odit, nihil nobis explicabo veritatis est
+            incidunt omnis totam, sit modi?</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus dolorem
+            enim earum fuga provident, repellat iure optio eos commodi natus placeat architecto vitae ratione dolore
+            consectetur officiis! Quibusdam, at.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsam tempore corrupti
+            facere sequi quia sint molestias hic assumenda provident. Suscipit iste dolore obcaecati natus maxime
+            dolores necessitatibus enim placeat.</div>
+
+
+    </div>
+
+</body>
+
+</html>
